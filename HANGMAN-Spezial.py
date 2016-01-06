@@ -1,4 +1,4 @@
-
+#Bibliothek für Zufallsentscheidungen wird importiert
 import random
 
 
@@ -93,7 +93,7 @@ while spielen:
                 if eingabe == richtigesWort:
                     print("Herzlichen Glückwunsch, du hast das richtige Wort eingegeben! \nDu hast gewonnen!")
                     break
-                #Die folgende While-Schleife läuft, so lange 
+                #Die folgende While-Schleife läuft, so lange die buchstabenNummer kleiner ist als die Länge des Wortes 
                 while (buchstabenNummer < len(richtigesWort)):
                     if(richtigesWort[buchstabenNummer] == eingabe):
 
@@ -191,6 +191,8 @@ while spielen:
 
                 if buchstabe == vermutung:
                     versuche += 1
+
+            #Hier wird festgelegt was als Antwort zu den eingegeben Buchstaben kommen soll
 
             if versuche > 1:
                 print ("\nJa! Das Wort hat",versuche, "'" + vermutung+"'"+"s")
